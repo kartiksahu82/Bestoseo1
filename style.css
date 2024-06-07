@@ -90,17 +90,14 @@ section .card {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  justify-content: center;
-  align-items: center;
   align-content: center;
-  
   width: 100%;
   max-width: 300px;
   border: 1px solid #ddd;
   border-radius: 12px;
   overflow: hidden;
   background-color: #fff;
-  padding: 20px;
+  padding: 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease-in;
   text-align: center;
@@ -130,6 +127,7 @@ section .card p {
   font-size: 16px;
   line-height: 1.5;
   flex-grow: 1;
+  padding: 2vh;
 }
 
 /* Add equal height for all cards */
@@ -188,12 +186,15 @@ section .card-content {
   section .grid,
   section .grid1 {
     padding: 3vh 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   section .card {
     width: 100%;
-    max-width: 250px;
-    padding: 2vh;
+    max-width: 100%;
+    margin-bottom: 20px;
   }
 
   section .card img {
@@ -229,11 +230,15 @@ section .card-content {
   section .grid,
   section .grid1 {
     padding: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   section .card {
     width: 100%;
     max-width: 100%;
+    margin-bottom: 20px;
     padding: 1vh;
   }
 
@@ -254,6 +259,7 @@ h2 {
   text-align: center;
 }
 
-
-.dis{justify-content: space-between;
-gap: 2vh;}
+.dis {
+  justify-content: space-between;
+  gap: 2vh;
+}
